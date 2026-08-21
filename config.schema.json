@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "integer",
+      "default": 1
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "Manual",
+        "Balanced",
+        "Adaptive",
+        "Aggressive"
+      ],
+      "default": "Adaptive"
+    },
+    "targetFps": {
+      "type": "integer",
+      "minimum": 20,
+      "maximum": 120,
+      "default": 60
+    },
+    "enterThreshold": {
+      "type": "integer",
+      "minimum": 20,
+      "maximum": 120,
+      "default": 42
+    },
+    "recoverThreshold": {
+      "type": "integer",
+      "minimum": 25,
+      "maximum": 144,
+      "default": 52
+    },
+    "sampleFrames": {
+      "type": "integer",
+      "minimum": 15,
+      "maximum": 120,
+      "default": 45
+    },
+    "stableSeconds": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10,
+      "default": 3
+    },
+    "gradualRecovery": {
+      "type": "boolean",
+      "default": true
+    },
+    "safeProbeOnly": {
+      "type": "boolean",
+      "default": true
+    },
+    "probeRenderSignatures": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

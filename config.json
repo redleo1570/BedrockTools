@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "enabled": true,
+  "mode": "Adaptive",
+  "targetFps": 60,
+  "enterThreshold": 42,
+  "recoverThreshold": 52,
+  "sampleFrames": 45,
+  "stableSeconds": 3,
+  "gradualRecovery": true,
+  "safeProbeOnly": true,
+  "probeRenderSignatures": true
+}
